@@ -14,6 +14,9 @@ export default defineConfig({
           filename.split(/[/\\]/).includes('node_modules') ? undefined : true
       },
       adapter: adapter(),
+      paths: {
+        assets: "https://colors-two-delta.vercel.app"
+      }
     })
   ]
 });

@@ -14,9 +14,6 @@ export default defineConfig({
           filename.split(/[/\\]/).includes('node_modules') ? undefined : true
       },
       adapter: adapter(),
-      paths: {
-        base: process.env.NODE_ENV === 'production' ? '/colors' : ''
-      }
     })
   ]
 });
